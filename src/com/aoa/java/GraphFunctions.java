@@ -8,7 +8,7 @@ public class GraphFunctions {
 
         visited[v] = true;
         recStack[v] = true;
-
+        
         for (Integer neighbor : graph.get(v)) {
             if (isCyclicUtil(neighbor, visited, recStack, graph)) {
                 return true;
